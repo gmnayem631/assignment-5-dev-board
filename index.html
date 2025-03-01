@@ -73,9 +73,11 @@
     <main>
       <section class="p-6 mt-5 max-w-[85%] mx-auto bg-white rounded-2xl">
         <!-- top 3 card container -->
-        <div>
+        <div class="grid grid-cols-12 grid-rows-1 gap-6">
           <!-- card 1 (3 fraction) -->
-          <div class="flex items-center gap-5 bg-[#F4F7FF] rounded-xl p-5">
+          <div
+            class="flex items-center gap-5 bg-[#F4F7FF] rounded-xl p-5 col-span-3"
+          >
             <div class="bg-white rounded-full p-4">
               <img src="assets/checkbox.png" alt="" class="h-8 w-8" />
             </div>
@@ -83,6 +85,28 @@
               <p class="text-base font-medium">Task Assigned</p>
               <p class="font-bold text-3xl">05</p>
             </div>
+          </div>
+
+          <!-- card 2 (blue card) -->
+          <div
+            class="bg-gradient-to-r from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8] flex items-center p-6 rounded-xl gap-6 col-span-6"
+          >
+            <img src="assets/board.png" alt="" />
+            <h3 class="text-white font-medium text-2xl">
+              Discover Something <br />
+              New Today!
+            </h3>
+          </div>
+
+          <!-- card 3 (date) -->
+          <div class="flex items-center bg-[#F4F7FF] rounded-xl p-5 col-span-3">
+            <div class="bg-white rounded-full p-6">
+              <img src="assets/calender.png" alt="" />
+            </div>
+            <p class="text-2xl">
+              Wed, <br />
+              <span class="font-bold">Jul 28, 2025</span>
+            </p>
           </div>
         </div>
       </section>
