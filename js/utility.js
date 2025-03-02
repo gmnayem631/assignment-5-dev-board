@@ -14,11 +14,35 @@ function disableCompletedBtn(btn) {
   btn.style.opacity = "0.2";
 }
 
-function addElemInHistory(titleId, historyContainer) {
-  const elementTitle = document.getElementById(titleId).innerText;
-  const newElem = (document.getElementById(
-    historyContainer
-  ).innerHTML = `You have completed the task ${elementTitle}`);
-  newElem.style.backgroundColor = "#F4F7FF";
-  newElem.style.borderRadius = "8px";
+function currentDate() {
+  const date = new Date();
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const thisDay = days[date.getDay()];
+
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  const thisMonth = months[date.getMonth()];
+
+  const thisDate = date.getDate();
+  const thisYear = date.getFullYear();
+
+  return `${thisDay}, ${thisMonth} ${thisDate}, ${thisYear}`;
+}
+
+function currentTime() {
+  const date = new Date();
+  const time = date.toLocaleTimeString();
+  return time;
 }

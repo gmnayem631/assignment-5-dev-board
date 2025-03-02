@@ -31,12 +31,18 @@
       .text-secondary {
         color: #1e1e1e;
       }
+      #history-container p {
+        background-color: #f4f7ff;
+        padding: 10px;
+        margin-block: 15px;
+        border-radius: 8px;
+      }
     </style>
   </head>
   <body>
     <!-- Header Section -->
     <section>
-      <header>
+      <header class="pt-6">
         <nav
           class="flex justify-between bg-white max-w-[85%] mx-auto mt-6 rounded-2xl p-7"
         >
@@ -62,7 +68,7 @@
             </div>
             <!-- color generating button -->
             <button class="cursor-pointer bg-[#F4F7FF] rounded-full p-3">
-              <img src="assets/theme-btn.png" alt="" />
+              <img src="assets/theme-btn.png" alt="" id="color-btn" />
             </button>
           </div>
         </nav>
@@ -94,20 +100,18 @@
           >
             <img src="assets/board.png" alt="" />
             <h3 class="text-white font-medium text-2xl">
-              Discover Something <br />
-              New Today!
+              Discover Something New Today!
             </h3>
           </div>
 
           <!-- card 3 (date) -->
-          <div class="flex items-center bg-[#F4F7FF] rounded-xl p-5 col-span-3">
+          <div
+            class="flex gap-3 items-center bg-[#F4F7FF] rounded-xl p-5 col-span-3"
+          >
             <div class="bg-white rounded-full p-6">
               <img src="assets/calender.png" alt="" />
             </div>
-            <p class="text-2xl">
-              Wed, <br />
-              <span class="font-bold">Jul 28, 2025</span>
-            </p>
+            <p id="board-date" class="text-2xl"></p>
           </div>
         </div>
 
@@ -120,7 +124,7 @@
                 ShopEase
               </button>
             </div>
-            <h2 id="fix-mobile" class="text-2xl font-medium">
+            <h2 class="fix-mobile text-2xl font-medium">
               Fix Mobile Button Issue
             </h2>
             <p
@@ -148,7 +152,7 @@
                 CloudSync
               </button>
             </div>
-            <h2 class="text-2xl font-medium">Add Dark Mode</h2>
+            <h2 class="dark-mode text-2xl font-medium">Add Dark Mode</h2>
             <p
               class="bg-white p-4 text-black border-dashed border-[0.5px] border-transparent rounded-lg"
             >
@@ -287,6 +291,7 @@
           </div>
           <div>
             <button
+              id="clear-history"
               class="btn bg-[#3752FD] py-3 px-5 rounded-lg text-white font-medium"
             >
               Clear History
