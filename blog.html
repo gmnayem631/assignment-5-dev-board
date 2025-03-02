@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <!-- importing google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importing DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Internal CSS for the site -->
+    <style>
+      html {
+        background-color: #f4f7ff;
+        font-family: "Poppins", serif;
+        color: #00303c;
+      }
+      .text-secondary {
+        color: #1e1e1e;
+      }
+    </style>
+  </head>
+</html>
+<body>
+  <section>
+    <header>
+      <nav
+        class="flex justify-between bg-white max-w-[85%] mx-auto mt-6 rounded-2xl p-7"
+      >
+        <!-- Logo and name -->
+        <div class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="" class="w-12 h-12" />
+          <p class="text-4xl">Dev<span class="font-bold">Board</span></p>
+        </div>
+        <!-- Back to Desk button -->
+        <div>
+          <button
+            id="back-btn"
+            class="btn bg-[#3752FD] rounded-lg text-white text-xl p-6"
+          >
+            Back to Desk
+          </button>
+        </div>
+      </nav>
+    </header>
+  </section>
+
+  <main>
+    <section class="max-w-[85%] mx-auto mt-7">
+      <h1 class="text-3xl font-bold text-center">Blogs</h1>
+
+      <!-- question cards -->
+      <!-- question 1 -->
+      <div class="bg-white p-5 mt-5">
+        <h3 class="text-base font-bold">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h3>
+        <p class="mt-5">
+          You can select an element in DOM by tag name (getElementsByTagName),
+          ID name (getElementById), and queries (querySelector,
+          querySelectorAll)
+        </p>
+      </div>
+
+      <!-- question 2 -->
+      <div class="bg-white p-5 mt-5">
+        <h3 class="text-base font-bold">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h3>
+        <div class="mt-5">
+          <ul>
+            <li>
+              innerText: Returns the text content of the element and all its
+              children
+            </li>
+            <li>
+              innerHTML: Returns the plain text or HTML content in an element.
+            </li>
+            <li>
+              textContent: Returns textual contents even for hidden elements
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- question 3 -->
+      <div class="bg-white p-5 mt-5">
+        <h3 class="text-base font-bold">
+          Question-3: What is event delegation in the DOM?
+        </h3>
+        <p class="mt-5">
+          Event delegation means that an event will be handled by the child's
+          parent.
+        </p>
+      </div>
+      <!-- question 4 -->
+      <div class="bg-white p-5 mt-5">
+        <h3 class="text-base font-bold">
+          Question-4: What is event bubbling in the DOM?
+        </h3>
+        <p class="mt-5">
+          An event will climb up from child to parent in the DOM tree.
+        </p>
+      </div>
+      <!-- question 5 -->
+      <div class="bg-white p-5 mt-5">
+        <h3 class="text-base font-bold">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </h3>
+        <ul class="mt-5">
+          <li>create: document.getElementById.createElement</li>
+          <li>add: document.getElementById.appendChild</li>
+          <li>remove: document.getElementById.remove</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="js/blog.js"></script>
+</body>

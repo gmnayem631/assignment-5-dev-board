@@ -57,7 +57,7 @@
                   alt=""
                   class="h-8 w-8 cursor-pointer"
                 />
-                23
+                <span id="checkbox-number">23</span>
               </button>
             </div>
             <!-- color generating button -->
@@ -83,13 +83,14 @@
             </div>
             <div>
               <p class="text-base font-medium">Task Assigned</p>
-              <p class="font-bold text-3xl">05</p>
+              <p id="task-assigned" class="font-bold text-3xl">6</p>
             </div>
           </div>
 
           <!-- card 2 (blue card) -->
           <div
-            class="bg-gradient-to-r from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8] flex items-center p-6 rounded-xl gap-6 col-span-6"
+            id="discover"
+            class="bg-gradient-to-r from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8] flex items-center p-6 rounded-xl gap-6 col-span-6 cursor-pointer"
           >
             <img src="assets/board.png" alt="" />
             <h3 class="text-white font-medium text-2xl">
@@ -119,7 +120,9 @@
                 ShopEase
               </button>
             </div>
-            <h2 class="text-2xl font-medium">Fix Mobile Button Issue</h2>
+            <h2 id="fix-mobile" class="text-2xl font-medium">
+              Fix Mobile Button Issue
+            </h2>
             <p
               class="bg-white p-4 text-black border-dashed border-[0.5px] border-transparent rounded-lg"
             >
@@ -132,8 +135,7 @@
                 <p class="font-medium text-base">21 March, 2025</p>
               </div>
               <button
-                id="completed"
-                class="btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
+                class="completed btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
               >
                 Completed
               </button>
@@ -159,7 +161,7 @@
                 <p class="font-medium text-base">21 March, 2025</p>
               </div>
               <button
-                class="btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
+                class="completed btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
               >
                 Completed
               </button>
@@ -185,7 +187,7 @@
                 <p class="font-medium text-base">21 March, 2025</p>
               </div>
               <button
-                class="btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
+                class="completed btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
               >
                 Completed
               </button>
@@ -211,7 +213,7 @@
                 <p class="font-medium text-base">21 March, 2025</p>
               </div>
               <button
-                class="btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
+                class="completed btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
               >
                 Completed
               </button>
@@ -237,7 +239,7 @@
                 <p class="font-medium text-base">21 March, 2025</p>
               </div>
               <button
-                class="btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
+                class="completed btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
               >
                 Completed
               </button>
@@ -263,7 +265,7 @@
                 <p class="font-medium text-base">21 March, 2025</p>
               </div>
               <button
-                class="btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
+                class="completed btn font-medium bg-[#3752FD] py-3 px-5 text-white rounded-lg"
               >
                 Completed
               </button>
@@ -294,10 +296,11 @@
 
         <!-- history container -->
         <div id="history-container" class="py-6 px-4">
-          <h1>Hello World</h1>
+          <!-- <h1>Hello World</h1> -->
         </div>
       </section>
     </main>
     <script src="js/script.js"></script>
+    <script src="js/utility.js"></script>
   </body>
 </html>
